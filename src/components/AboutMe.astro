@@ -1,0 +1,42 @@
+---
+const personalImageAlt = "Ricardo Pérez";
+---
+
+<article
+  class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row"
+>
+  <div
+    class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
+  >
+    <p>
+      Me llamo Ricardo Pérez, <strong
+        >soy egresado del Instituto Profesional Duoc UC en Santiago, Chile.</strong
+      >
+      Donde adquirí una sólida formación en las últimas tecnologías y metodologías
+      en el campo de la informática.
+      <strong
+        >Mi enfoque principal se centra en el Desarrollo Web y la Ciencia de
+        Datos.</strong
+      >
+    </p>
+    <p>
+      Como profesional, <strong
+        >me destaco por mi capacidad para trabajar en equipo</strong
+      >, mi atención al detalle y mi compromiso con la excelencia en cada
+      proyecto en el que participo.
+    </p>
+    <p>
+      Estoy constantemente actualizando mis habilidades y aprendiendo nuevas
+      tecnologías para mantenerme al día con un campo tan dinámico como el de la
+      informática.
+    </p>
+  </div>
+  <img
+    width="200"
+    height="200"
+    src="/porfolio.webp"
+    alt={personalImageAlt}
+    class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-full bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
+    style="object-position: 50% 50%"
+  />
+</article>
