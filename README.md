@@ -30,7 +30,7 @@ Si deseas revisar el proyecto en tu entorno local, puedes seguir estos pasos:
    ```sh
    git clone https://github.com/tuusuario/porfolio-ricdevm.git
    cd porfolio-ricdevm
-   
+
 2. Instala las dependencias:
    ```sh
    npm install
@@ -48,4 +48,4 @@ Si deseas revisar el proyecto en tu entorno local, puedes seguir estos pasos:
 
 ---
 
-© {Año actual} ricdevm. Portafolio personal.
+© 2025 ricdevm. Portafolio personal.
