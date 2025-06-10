@@ -1,38 +1,40 @@
 ---
+import React from "./icons/React.astro";
+import TailwindCSS from "./icons/TailwindCSS.astro";
+import TypeScript from "./icons/TypeScript.astro"
 import GitHub from "./icons/GitHub.astro";
 
 import LinkButton from "./LinkButton.astro";
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
+  REACT: {
+    name: "React",
+    class: "bg-white text-black",
+    icon: React,
     
   },
   TAILWIND: {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
-    
+    icon: TailwindCSS
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-white text-black",
+    icon: TypeScript
   },
 };
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Control de Gastos React, TypeScript, useReducer y Context API",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Este proyecto es una aplicación para el control de gastos personales desarrollada con React, TypeScript y Vite. Utiliza la Context API y el hook useReducer para la gestión global del estado, permitiendo un manejo eficiente y escalable de los datos de la aplicación.",
+    link: "https://control-gastos-ricdev.netlify.app/",
+    github: "https://github.com/ricdevm/control-gastos",
+    image: "/planificador-gastos.webp",
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.TYPESCRIPT],
   },
-  {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
-    description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
-  },
+  
 ];
 ---
 
@@ -43,7 +45,7 @@ const PROJECTS = [
         <div class="w-full md:w-1/2">
           <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
             <img
-              alt="Recién llegado vs 5 años en Nueva Zelanda"
+              alt="Proyecto calculador de gastos"
               class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
               loading="lazy"
               src={image}
@@ -62,7 +64,7 @@ const PROJECTS = [
                   <span
                     class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
                   >
-                    <tag class="size-4" />
+                    <tag.icon class="size-4" />
                     {tag.name}
                   </span>
                 </li>
@@ -74,13 +76,13 @@ const PROJECTS = [
             </div>
             <footer class="flex items-end justify-start mt-4 gap-x-4">
               {github && (
-                <LinkButton href={github}>
+                <LinkButton href={github} target="_blank" rel="noopener noreferrer">
                   <GitHub class="size-6" />
                   Code
                 </LinkButton>
               )}
               {link && (
-                <LinkButton href={link}>
+                <LinkButton href={link} target="_blank" rel="noopener noreferrer">
                   
                   Preview
                 </LinkButton>
