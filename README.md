@@ -1,7 +1,7 @@
 
 # 🌟 Portafolio - ricdevm
 
-![Vista previa del portafolio](/screenshot.webp)
+![Vista previa del portafolio](screenshot.webp)
 
 ¡Hola! 👋 Soy Ricardo Pérez, desarrollador web de Santiago, Chile.  
 Este es mi portafolio personal, donde comparto mi experiencia, proyectos y habilidades en tecnología.
