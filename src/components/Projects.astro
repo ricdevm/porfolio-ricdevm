@@ -28,11 +28,20 @@ const PROJECTS = [
   {
     title: "Control de Gastos React, TypeScript, useReducer y Context API",
     description:
-      "Este proyecto es una aplicación para el control de gastos personales desarrollada con React, TypeScript y Vite. Utiliza la Context API y el hook useReducer para la gestión global del estado, permitiendo un manejo eficiente y escalable de los datos de la aplicación.",
+      "Este proyecto es una aplicación para el control de gastos personales desarrollada con React, TypeScript y Vite.",
     link: "https://control-gastos-ricdev.netlify.app/",
     github: "https://github.com/ricdevm/control-gastos",
     image: "/planificador-gastos.webp",
-    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.TYPESCRIPT],
+    tags: [TAGS.REACT, TAGS.TYPESCRIPT, TAGS.TAILWIND],
+  },
+  {
+    title: "Calorie Tracker – React + TypeScript + Tailwind CSS",
+    description:
+      "Esta aplicación web permite registrar y visualizar las calorías consumidas mediante alimentos y las calorías quemadas a través de actividades físicas.",
+    link: "https://calories-tracker-ricdev.netlify.app/",
+    github: "https://github.com/ricdevm/calorie-tracker",
+    image: "/calories-tracker.webp",
+    tags: [TAGS.REACT, TAGS.TYPESCRIPT, TAGS.TAILWIND],
   },
   
 ];
@@ -45,7 +54,7 @@ const PROJECTS = [
         <div class="w-full md:w-1/2">
           <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
             <img
-              alt="Proyecto calculador de gastos"
+              alt="Foto de proyectos"
               class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
               loading="lazy"
               src={image}
